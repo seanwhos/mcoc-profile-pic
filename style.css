@@ -1,0 +1,75 @@
+@import url(//db.onlinewebfonts.com/c/6bce08c7578b064d528ce59eea3aed9c?family=Handel+Gothic+D);
+
+@import url('https://www.fontify.me/wf/e616f23df7318a71e791bef275123744');
+
+html {
+    background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+}
+
+#container {
+    width: 800px;
+    padding: 60px 0 0 30px;
+}
+
+#avatar {
+    position: relative;
+}
+
+#user-picture img {
+    position: absolute;
+    left: 41px;
+    top: -20px;
+    width: 211px;
+    z-index: 1;
+}
+
+#border-infront {
+    position: absolute;
+    z-index: 2;
+}
+
+#background {
+    background: radial-gradient(circle, rgba(22,174,217,1) 0%, rgba(0,0,0,1) 93%);
+    margin: 25px 0 0 25px;
+    border-radius: 40px;
+    width: 240px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    z-index: -5;
+}
+
+#info {
+    position: absolute;
+    top: 207px;
+    left: 32px;
+    z-index: 3;
+}
+
+h1 {
+    color: rgb(230, 230, 230);
+    font-family: Handel Gothic D, Arial;
+    text-transform: uppercase;
+    letter-spacing: 0.8pt;
+    font-size: 20pt;
+    margin: 0;
+    padding: 0 0 3px 0;
+    width: 225px;
+    text-overflow: none;
+}
+
+h2 {
+    color: rgb(126, 126, 126);
+    font-family: font85995;
+    font-size: 32pt;
+    letter-spacing: 1.5pt;
+    margin: 0;
+    padding: 0 0 0 0;
+    text-overflow: none;
+}
