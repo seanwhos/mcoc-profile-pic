@@ -24,12 +24,17 @@ html {
     position: relative;
 }
 
-#user-picture img {
-    position: absolute;
-    left: 41px;
-    top: -20px;
+#user-picture{
+    position: relative;
     width: 211px;
     z-index: 1;
+    left: 42px;
+    bottom: 110px;
+}
+
+#user-picture img {
+    position: absolute;
+    width: 100%;
 }
 
 #border-infront {
