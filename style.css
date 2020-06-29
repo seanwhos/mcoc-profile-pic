@@ -89,7 +89,7 @@ h2 {
 
 #controls {
     position: absolute;
-    top: 130px;
+    top: 120px;
     left: 425px;
 }
 
@@ -98,7 +98,7 @@ h2 {
     font-family: Handel Gothic D;
     font-size: 20pt;
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     width: 100%;
     border-radius: 5px;
     outline: none;
