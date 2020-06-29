@@ -2,20 +2,27 @@ const nameButton = document.getElementById('name');
 const powerButton = document.getElementById('power');
 const imageButton = document.getElementById('imageurl');
 
-const avatarName = document.getElementById('champname');
-const avatarPower = document.getElementById('champpi');
-const avatarImage = document.getElementById('user-picture');
+const avatarName = document.getElementsByClassName('champname');
+const avatarPower = document.getElementsByClassName('champpi');
+const avatarImage = document.getElementsByClassName('user-picture');
+
+console.log(avatarName[0])
 
 nameButton.addEventListener('click', function() {
-    avatarName.innerHTML = prompt('Enter character name:', `Can't currently handle names longer than the length of image`);
+    let userInput = prompt('Enter character name:', `Can't currently handle names longer than the length of image`);
+    avatarName[0].innerHTML = userInput;
+    avatarName[1].innerHTML = userInput;
 });
 
 powerButton.addEventListener('click', function() {
-    avatarPower.innerHTML = prompt('Enter power index:', `Include own commas e.g. "1,000,000"`);
+    let userInput = prompt('Enter power index:', `Include own commas e.g. "1,000,000"`);
+    avatarPower[0].innerHTML = userInput;
+    avatarPower[1].innerHTML = userInput;
 });
 
 imageButton.addEventListener('click', function() {
      let userUrl = prompt('Enter valid image URL:', `Needs to be transparent background with similar headshot shape`); 
 
-    avatarImage.innerHTML = `<img src = "${userUrl}"></img>`
+    avatarImage[0].innerHTML = `<img src = "${userUrl}"></img>`
+    avatarImage[1].innerHTML = `<img src = "${userUrl}"></img>`
 });

@@ -18,18 +18,18 @@ html {
 #container {
     width: 800px;
     padding: 0 0 0 0;
-    margin: 75px 30px;
+    margin: 0 50px;
 }
 
-#avatar {
+.avatar {
     position: relative;
     height: 300px;
     width: 300px;
-    margin: 0 0 0 0;
+    margin: 80px 0 0 0;
     padding: 0 0 0 0;
 }
 
-#user-picture{
+.user-picture{
     position: absolute;
     width: 211px;
     z-index: 1;
@@ -37,16 +37,16 @@ html {
     left: 41px;
 }
 
-#user-picture img {
+.user-picture img {
     width: 100%;
 }
 
-#border-infront {
+.border-infront {
     position: relative;
     z-index: 2;
 }
 
-#background {
+.background {
     background: radial-gradient(circle, rgba(22,174,217,1) 0%, rgba(0,0,0,1) 93%);
     margin: 25px 0 0 25px;
     border-radius: 40px;
@@ -57,7 +57,7 @@ html {
     z-index: -5;
 }
 
-#info {
+.info {
     position: absolute;
     top: 207px;
     left: 32px;
