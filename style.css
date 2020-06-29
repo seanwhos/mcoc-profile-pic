@@ -67,26 +67,26 @@ h1 {
     color: rgb(230, 230, 230);
     font-family: Handel Gothic;
     text-transform: uppercase;
-    font-size: 21.5pt;
-    letter-spacing: 0.8pt;
+    font-size: 21pt;
     margin: 0;
     padding: 0 0 3px 0;
     width: 225px;
     white-space: nowrap;
     text-overflow: none;
     font-weight: normal;
+    letter-spacing: 1px;
 }
 
 h2 {
     color: rgb(126, 126, 126);
     font-family: font85995;
     font-size: 32pt;
-    letter-spacing: 1.5pt;
     margin: 0;
     padding: 0 0 0 0;
     text-overflow: none;
     white-space: nowrap;
     font-weight: normal;
+    letter-spacing: 1pt;
 }
 
 #controls {
