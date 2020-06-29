@@ -5,6 +5,8 @@
 
 @font-face {font-family: "EurostileEF"; src: url("//db.onlinewebfonts.com/t/217822d7e66d4f310ff03307302caa43.eot"); src: url("//db.onlinewebfonts.com/t/217822d7e66d4f310ff03307302caa43.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/217822d7e66d4f310ff03307302caa43.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/217822d7e66d4f310ff03307302caa43.woff") format("woff"), url("//db.onlinewebfonts.com/t/217822d7e66d4f310ff03307302caa43.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/217822d7e66d4f310ff03307302caa43.svg#EurostileEF") format("svg"); }
 
+
+
 html {
     background:
     radial-gradient(black 15%, transparent 16%) 0 0,
@@ -66,9 +68,9 @@ html {
 
 h1 {
     color: rgb(230, 230, 230);
-    font-family: Handel Gothic;
+    font-family: handel gothic;
     text-transform: uppercase;
-    font-size: 21pt;
+    font-size: 22pt;
     margin: 0;
     padding: 0 0 3px 0;
     width: 225px;
