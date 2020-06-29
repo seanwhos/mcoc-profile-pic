@@ -17,7 +17,7 @@ html {
 
 #container {
     width: 800px;
-    padding: 0 0 0 0;
+    padding: 75px 0 0 0;
     margin: 0 50px;
 }
 
@@ -25,7 +25,7 @@ html {
     position: relative;
     height: 300px;
     width: 300px;
-    margin: 80px 0 0 0;
+    margin: 0 0 80px 0;
     padding: 0 0 0 0;
 }
 
