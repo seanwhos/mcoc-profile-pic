@@ -86,3 +86,35 @@ h2 {
     padding: 0 0 0 0;
     text-overflow: none;
 }
+
+#controls {
+    position: absolute;
+    top: 130px;
+    left: 425px;
+}
+
+#controls button {
+    color: rgb(228, 220, 214);
+    font-family: Handel Gothic D;
+    font-size: 20pt;
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid black;
+    background-image: linear-gradient(to bottom, rgb(61, 61, 61), #1d1d1d);
+    box-shadow: 0 0 10px rgb(20, 20, 20);
+}
+
+#controls button:hover {
+    color: rgb(41, 41, 41);
+    background-image: linear-gradient(to bottom, rgb(199, 199, 199), #929292);
+    box-shadow: 0 0 10px rgb(20, 20, 20);
+}
+
+#controls button:active {
+    color: rgb(22, 22, 22);
+    background-image: linear-gradient(to bottom, #929292, rgb(199, 199, 199));
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+}
