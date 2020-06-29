@@ -69,12 +69,13 @@ h1 {
     font-family: Handel Gothic D;
     text-transform: uppercase;
     letter-spacing: 0.8pt;
-    font-size: 20pt;
+    font-size: 22pt;
     margin: 0;
-    padding: 0 0 3px 0;
+    padding: 0 0 4px 0;
     width: 225px;
     text-overflow: none;
     white-space: nowrap;
+    font-weight: 400;
 }
 
 h2 {
@@ -85,6 +86,7 @@ h2 {
     margin: 0;
     padding: 0 0 0 0;
     text-overflow: none;
+    font-weight: 400;
 }
 
 #controls {
