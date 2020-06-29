@@ -1,8 +1,7 @@
 @import url('https://www.fontify.me/wf/e616f23df7318a71e791bef275123744');
 
-@font-face {font-family: "Handel Gothic D"; src: url("//db.onlinewebfonts.com/t/6bce08c7578b064d528ce59eea3aed9c.eot"); src: url("//db.onlinewebfonts.com/t/6bce08c7578b064d528ce59eea3aed9c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6bce08c7578b064d528ce59eea3aed9c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6bce08c7578b064d528ce59eea3aed9c.woff") format("woff"), url("//db.onlinewebfonts.com/t/6bce08c7578b064d528ce59eea3aed9c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6bce08c7578b064d528ce59eea3aed9c.svg#Handel Gothic D") format("svg"); }
 
-
+@font-face {font-family: "Handel Gothic"; src: url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.eot"); src: url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.woff") format("woff"), url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.svg#Handel Gothic") format("svg"); }
 
 
 html {
@@ -66,16 +65,16 @@ html {
 
 h1 {
     color: rgb(230, 230, 230);
-    font-family: Handel Gothic D;
+    font-family: Handel Gothic;
     text-transform: uppercase;
+    font-size: 21.5pt;
     letter-spacing: 0.8pt;
-    font-size: 22pt;
     margin: 0;
-    padding: 0 0 4px 0;
+    padding: 0 0 3px 0;
     width: 225px;
-    text-overflow: none;
     white-space: nowrap;
-    font-weight: bold;
+    text-overflow: none;
+    font-weight: normal;
 }
 
 h2 {
@@ -86,7 +85,8 @@ h2 {
     margin: 0;
     padding: 0 0 0 0;
     text-overflow: none;
-    font-weight: 400;
+    white-space: nowrap;
+    font-weight: normal;
 }
 
 #controls {
@@ -97,7 +97,7 @@ h2 {
 
 #controls button {
     color: rgb(228, 220, 214);
-    font-family: Handel Gothic D;
+    font-family: Handel Gothic;
     font-size: 20pt;
     margin: 10px;
     padding: 10px;
