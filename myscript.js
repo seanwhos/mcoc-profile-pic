@@ -6,10 +6,21 @@ const avatarName = document.getElementsByClassName('champname');
 const avatarPower = document.getElementsByClassName('champpi');
 const avatarImage = document.getElementsByClassName('user-picture');
 
-console.log(avatarName[0])
-
 nameButton.addEventListener('click', function() {
-    let userInput = prompt('Enter character name:', `Can't currently handle names longer than the length of image`);
+    let userInput = prompt('Enter character name:', `Max length about 16 characters`);
+        
+        if (userInput.length > 14) {
+            avatarName[0].style.fontSize = "17pt";
+            avatarName[0].style.padding = "5px 0 5px 0";
+            avatarName[1].style.fontSize = "17pt";
+            avatarName[1].style.padding = "5px 0 5px 0";
+        } else {
+            avatarName[0].style.fontSize = "";
+            avatarName[0].style.padding = "";
+            avatarName[1].style.fontSize = "";
+            avatarName[1].style.padding = "";
+        };
+
     avatarName[0].innerHTML = userInput;
     avatarName[1].innerHTML = userInput;
 });
