@@ -17,28 +17,32 @@ html {
 
 #container {
     width: 800px;
-    padding: 60px 0 0 30px;
+    padding: 0 0 0 0;
+    margin: 75px 30px;
 }
 
 #avatar {
     position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
 
 #user-picture{
-    position: relative;
+    position: absolute;
     width: 211px;
     z-index: 1;
-    left: 42px;
-    bottom: 110px;
+    bottom: 105px;
+    left: 41px;
 }
 
 #user-picture img {
-    position: absolute;
     width: 100%;
 }
 
 #border-infront {
-    position: absolute;
+    position: relative;
     z-index: 2;
 }
 
