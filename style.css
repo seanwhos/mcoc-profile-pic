@@ -1,5 +1,3 @@
-
-
 @font-face {font-family: "Handel Gothic"; src: url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.eot"); src: url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.woff") format("woff"), url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.svg#Handel Gothic") format("svg"); }
 
 @font-face {
@@ -75,11 +73,11 @@ html {
 
 h1 {
     color: rgb(230, 230, 230);
-    font-family: hanzelnormal, Arial, Helvetica, sans-serif;
+    font-family: handel gothic;
     text-transform: uppercase;
-    font-size: 21pt;
+    font-size: 22pt;
     margin: 0;
-    padding: 6px 0 3px 0;
+    padding: 0 0 3px 0;
     width: 225px;
     white-space: nowrap;
     text-overflow: none;
@@ -104,7 +102,7 @@ h2 {
 
 .skillicon {
     position: relative;
-    bottom: 2px;
+    bottom: 3px;
     width: 45px;
     height: 45px
 }
