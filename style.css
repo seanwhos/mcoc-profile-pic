@@ -69,7 +69,7 @@ html {
 
 .info {
     position: absolute;
-    bottom: -2px;
+    top: 253px;
     left: 37px;
     z-index: 3;
 }
@@ -96,22 +96,25 @@ h2 {
     text-overflow: none;
     white-space: nowrap;
     font-weight: normal;
-    letter-spacing: 2pt;
+    letter-spacing: 1pt;
 }
 
 #controls {
     position: absolute;
     top: 110px;
     left: 425px;
+    width: 310px;
+    padding: 10px;
+    text-align: center;
 }
 
 #controls button {
     color: rgb(228, 220, 214);
     font-family: Handel Gothic;
     font-size: 16pt;
-    margin: 5px;
+    width: 100%;
+    margin: 5px 0;
     padding: 10px;
-    width: 300px;
     border-radius: 5px;
     outline: none;
     border: 2px solid black;
@@ -141,6 +144,32 @@ h2 {
     text-shadow: 0 0 15px rgb(182, 182, 182);
 }
 
+#dlbtn {
+    display: flex;
+    justify-content: space-between;
+}
+
 #controls button#dupe, #controls button#undupe {
-    width: 142.5px;
+    width: 49%;
+}
+
+
+h2#champlist {
+    color: rgb(230, 230, 230);
+    font-size: 12pt;
+    width: 100%;
+    word-wrap: break-word;
+    white-space: normal;
+    letter-spacing: 1pt;
+    padding: 5px 0 30px 0;
+}
+
+h2#champlist a {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+    text-decoration: underline;
+}
+
+h2#champlist a:hover {
+    color: rgb(27, 180, 173);
 }
