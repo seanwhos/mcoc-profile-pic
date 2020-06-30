@@ -11,9 +11,9 @@ nameButton.addEventListener('click', function() {
         
         if (userInput.length > 11) {
             avatarName[0].style.fontSize = "17pt";
-            avatarName[0].style.padding = "2px 0 7px 0";
+            avatarName[0].style.padding = "4px 0 7px 0";
             avatarName[1].style.fontSize = "17pt";
-            avatarName[1].style.padding = "2px 0 7px 0";
+            avatarName[1].style.padding = "4px 0 7px 0";
         } else {
             avatarName[0].style.fontSize = "";
             avatarName[0].style.padding = "";
@@ -55,6 +55,26 @@ imageButton.addEventListener('click', function() {
     avatarImage[0].innerHTML = `<img src = "${userUrl}"></img>`
     avatarImage[1].innerHTML = `<img src = "${userUrl}"></img>`
 });
+
+
+
+function previewFile() {
+ let preview = document.getElementsByClassName('usrpic')
+  var file    = document.querySelector('input[type=file]').files[0];
+  var reader  = new FileReader();
+
+  reader.onloadend = function () {
+    preview[0].src = reader.result;
+    preview[1].src = reader.result;
+  }
+
+  if (file) {
+    reader.readAsDataURL(file);
+  } else {
+    preview.src = "";
+  }
+}
+
 
 const dupeAvatar = document.getElementById('duped');
 const downloadDupe = document.getElementById('dupe');

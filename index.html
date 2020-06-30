@@ -8,7 +8,7 @@
             <img class="border-behind" src="assets/6-star-top.png">
             
             <div class="user-picture">
-                <img src = "https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/c/cb/Nightcarnage_portrait.png/revision/latest?cb=20171209233548">
+                <img class = "usrpic" src = "https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/c/cb/Nightcarnage_portrait.png/revision/latest?cb=20171209233548">
             </div>
 
             <img class="border-infront" src="assets/6-star-dupe-bottom.png">
@@ -25,7 +25,7 @@
         <div class="avatar" id="unduped">
             <img class="border-behind" src="assets/6-star-top.png">
             <div class="user-picture">
-                <img src = "https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/c/cb/Nightcarnage_portrait.png/revision/latest?cb=20171209233548">
+                <img class = "usrpic" src = "https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/c/cb/Nightcarnage_portrait.png/revision/latest?cb=20171209233548">
             </div>
             <img class="border-infront" src="assets/6-star-bottom.png">
             <div class="background"></div>
@@ -40,8 +40,13 @@
         <div id="controls">
             <button id="name">CHANGE NAME</button><br>
             <button id="power">CHANGE PI</button><br>
-            <button id="imageurl">CHANGE IMAGE</button><br>
-            <h2 id="champlist">List of champions with images <a href="https://marvel-contestofchampions.fandom.com/wiki/List_of_Champions" target="_blank">here</a><br>(Right click, copy image address)</h2>
+            <button id="imageurl">CHANGE IMAGE (URL)</button><br>
+            <h2 id="champlist">List of champions for  image URLs <a href="https://marvel-contestofchampions.fandom.com/wiki/List_of_Champions" target="_blank">here</a> (Right click, copy image address) or select your own below:</h2>
+
+
+            <input type="file" name="file" id="file" class="hidden" onchange="previewFile()"/>
+            <button><label for="file">UPLOAD IMAGE...</label></button>
+
             <div id="classbuttons">
                 <img class="skillicon" id="skill" src = "assets/skills/skill.png">
                 <img class="skillicon" id="mutant" src = "assets/skills/mutant.png">

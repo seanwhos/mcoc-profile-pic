@@ -71,6 +71,15 @@ html {
     z-index: 3;
 }
 
+.hidden {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
 h1 {
     color: rgb(230, 230, 230);
     font-family: handel gothic;
