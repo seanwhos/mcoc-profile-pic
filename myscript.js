@@ -26,7 +26,25 @@ nameButton.addEventListener('click', function() {
 });
 
 powerButton.addEventListener('click', function() {
-    let userInput = prompt('Enter power index:', `Include own commas e.g. "1,000,000"`);
+    let userInput = prompt('Enter power index:', `Include commas; 999,999,999 max`);
+
+    if ((userInput.length > 7) && (userInput.length < 10)) {
+        avatarPower[0].style.fontSize = "28pt";
+        avatarPower[0].style.padding = "3px 0 0 0";
+        avatarPower[1].style.fontSize = "28pt";
+        avatarPower[1].style.padding = "3px 0 0 0";
+    } else if (userInput.length > 9) {
+        avatarPower[0].style.fontSize = "22pt";
+        avatarPower[0].style.padding = "6px 0 0 0";
+        avatarPower[1].style.fontSize = "22pt";
+        avatarPower[1].style.padding = "6px 0 0 0";
+    } else {
+        avatarPower[0].style.fontSize = "";
+        avatarPower[0].style.padding = "";
+        avatarPower[1].style.fontSize = "";
+        avatarPower[1].style.padding = "";
+    };
+
     avatarPower[0].innerHTML = userInput;
     avatarPower[1].innerHTML = userInput;
 });
@@ -53,10 +71,62 @@ downloadDupe.onclick = function() {
 
 
 downloadUndupe.onclick = function() {
-    domtoimage.toBlob(undupeAvatar)
-      .then(function(blob) {
-        window.saveAs(blob, 'champion-unduped.png');
-      });
-  }
-  
+  domtoimage.toBlob(undupeAvatar)
+    .then(function(blob) {
+      window.saveAs(blob, 'champion-unduped.png');
+    });
+}
+
+
+const skill = document.getElementById('skill');
+const mutant = document.getElementById('mutant');
+const tech = document.getElementById('tech');
+const cosmic = document.getElementById('cosmic');
+const mystic = document.getElementById('mystic');
+const science = document.getElementById('science');
+const combined = document.getElementById('combined');
+const none = document.getElementById('none');
+const powerClass = document.getElementsByClassName('powerclass');
+
+skill.addEventListener('click', function(){
+    powerClass[0].innerHTML = '<img class="skillicon" src = "assets/skills/skill.png"></img>';
+    powerClass[1].innerHTML = '<img class="skillicon" src = "assets/skills/skill.png"></img>';
+});
+
+mutant.addEventListener('click', function(){
+    powerClass[0].innerHTML = '<img class="skillicon" src = "assets/skills/mutant.png"></img>';
+    powerClass[1].innerHTML = '<img class="skillicon" src = "assets/skills/mutant.png"></img>';
+});
+
+tech.addEventListener('click', function(){
+    powerClass[0].innerHTML = '<img class="skillicon" src = "assets/skills/tech.png"></img>';
+    powerClass[1].innerHTML = '<img class="skillicon" src = "assets/skills/tech.png"></img>';
+});
+
+cosmic.addEventListener('click', function(){
+    powerClass[0].innerHTML = '<img class="skillicon" src = "assets/skills/cosmic.png"></img>';
+    powerClass[1].innerHTML = '<img class="skillicon" src = "assets/skills/cosmic.png"></img>';
+});
+
+mystic.addEventListener('click', function(){
+    powerClass[0].innerHTML = '<img class="skillicon" src = "assets/skills/mystic.png"></img>';
+    powerClass[1].innerHTML = '<img class="skillicon" src = "assets/skills/mystic.png"></img>';
+});
+
+science.addEventListener('click', function(){
+    powerClass[0].innerHTML = '<img class="skillicon" src = "assets/skills/science.png"></img>';
+    powerClass[1].innerHTML = '<img class="skillicon" src = "assets/skills/science.png"></img>';
+});
+
+combined.addEventListener('click', function(){
+    powerClass[0].innerHTML = '<img class="skillicon" src = "assets/skills/combined.png"></img>';
+    powerClass[1].innerHTML = '<img class="skillicon" src = "assets/skills/combined.png"></img>';
+});
+
+none.addEventListener('click', function(){
+    powerClass[0].innerHTML = '';
+    powerClass[1].innerHTML = '';
+});
+
+
 

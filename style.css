@@ -24,7 +24,7 @@ html {
 
 #container {
     width: 800px;
-    margin: 25px 50px;
+    margin: 20px 50px;
 }
 
 .avatar {
@@ -99,9 +99,20 @@ h2 {
     letter-spacing: 1pt;
 }
 
+.info div {
+    display: flex;
+}
+
+.skillicon {
+    position: relative;
+    bottom: 3px;
+    width: 45px;
+    height: 45px
+}
+
 #controls {
     position: absolute;
-    top: 110px;
+    top: 90px;
     left: 425px;
     width: 310px;
     padding: 10px;
