@@ -3,7 +3,12 @@
 
 @font-face {font-family: "Handel Gothic"; src: url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.eot"); src: url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.woff") format("woff"), url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/08b20650c32153daa258baa473099e97.svg#Handel Gothic") format("svg"); }
 
-@font-face {font-family: "EurostileEF"; src: url("//db.onlinewebfonts.com/t/217822d7e66d4f310ff03307302caa43.eot"); src: url("//db.onlinewebfonts.com/t/217822d7e66d4f310ff03307302caa43.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/217822d7e66d4f310ff03307302caa43.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/217822d7e66d4f310ff03307302caa43.woff") format("woff"), url("//db.onlinewebfonts.com/t/217822d7e66d4f310ff03307302caa43.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/217822d7e66d4f310ff03307302caa43.svg#EurostileEF") format("svg"); }
+@font-face {
+    font-family: "eurostile";
+    src: url("https://www.fontify.me/cm/e616f23df7318a71e791bef275123744/EurostileNextLTPro-Light.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    }
 
 
 
@@ -28,7 +33,7 @@ html {
     height: 300px;
     width: 300px;
     margin: 0 0 80px 0;
-    padding: 0 0 0 0;
+    padding: 30px 0 0 0;
 }
 
 .user-picture{
@@ -48,6 +53,10 @@ html {
     z-index: 2;
 }
 
+.border-behind {
+    vertical-align: bottom;
+}
+
 .background {
     background: radial-gradient(circle, rgba(22,174,217,1) 0%, rgba(0,0,0,1) 93%);
     margin: 25px 0 0 25px;
@@ -55,14 +64,14 @@ html {
     width: 240px;
     height: 200px;
     position: absolute;
-    top: 0;
+    top: 30;
     z-index: -5;
 }
 
 .info {
     position: absolute;
-    top: 207px;
-    left: 32px;
+    top: 237px;
+    left: 37px;
     z-index: 3;
 }
 
@@ -81,15 +90,15 @@ h1 {
 }
 
 h2 {
-    color: rgb(126, 126, 126);
-    font-family: font85995;
-    font-size: 32pt;
+    color: rgb(124, 124, 124);
+    font-family: Eurostile;
+    font-size: 33pt;
     margin: 0;
     padding: 0 0 0 0;
     text-overflow: none;
     white-space: nowrap;
     font-weight: normal;
-    letter-spacing: 1pt;
+    letter-spacing: 2pt;
 }
 
 #controls {
@@ -101,10 +110,10 @@ h2 {
 #controls button {
     color: rgb(228, 220, 214);
     font-family: Handel Gothic;
-    font-size: 20pt;
-    margin: 10px;
+    font-size: 16pt;
+    margin: 5px;
     padding: 10px;
-    width: 100%;
+    width: 300px;
     border-radius: 5px;
     outline: none;
     border: 2px solid black;
@@ -122,4 +131,18 @@ h2 {
     color: rgb(22, 22, 22);
     background-image: linear-gradient(to bottom, #929292, rgb(199, 199, 199));
     box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+#controls p {
+    color: rgb(228, 220, 214);
+    font-family: Handel Gothic;
+    font-size: 34pt;
+    letter-spacing: 5px;
+    padding: 0 10px;
+    margin: 20px 0 5px 0;
+    text-shadow: 0 0 15px rgb(182, 182, 182);
+}
+
+#controls button#dupe, #controls button#undupe {
+    width: 142.5px;
 }

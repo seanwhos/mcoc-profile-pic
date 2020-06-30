@@ -4,7 +4,7 @@
 <html>
 <body>
     <div id="container">
-        <div class="avatar">
+        <div class="avatar" id="duped">
             <img class="border-behind" src="assets/6-star-border-top.png">
             
             <div class="user-picture">
@@ -20,18 +20,15 @@
                 <h2 class="champpi">12,345</h2>
             </div>
         </div>
+        
 
-        <div class="avatar">
+        <div class="avatar" id="unduped">
             <img class="border-behind" src="assets/6-star-border-top.png">
-            
             <div class="user-picture">
                 <img src = "https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/6/61/Summoned_Symbioid_portrait.png/revision/latest/scale-to-width-down/150?cb=20181020060637">
             </div>
-
             <img class="border-infront" src="assets/6-star-border-bottom-2.png">
-
             <div class="background"></div>
-
             <div class="info">
                 <h1 class="champname">champ name</h1>
                 <h2 class="champpi">12,345</h2>
@@ -42,12 +39,17 @@
 
         <div id="controls">
             <button id="name">CHANGE NAME</button><br>
-            <button id="power">CHANGE POWER INDEX</button><br>
+            <button id="power">CHANGE PI</button><br>
             <button id="imageurl">CHANGE IMAGE</button><br>
+            <p>DOWNLOAD</p>
+            <button id="dupe">DUPE</button>
+            <button id="undupe">UNDUPED</button>
+
         </div>
     </div>
 </body>
 
-
+<script type="text/javascript" src="assets/dom-to-image.min.js"></script>
+<script type="text/javascript" src="assets/FileSaver.min.js"></script>
 <script src="myscript.js"></script>
 </html>

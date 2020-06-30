@@ -9,7 +9,7 @@ const avatarImage = document.getElementsByClassName('user-picture');
 nameButton.addEventListener('click', function() {
     let userInput = prompt('Enter character name:', `Max length about 16 characters`);
         
-        if (userInput.length > 11) {
+        if (userInput.length > 12) {
             avatarName[0].style.fontSize = "17pt";
             avatarName[0].style.padding = "5px 0 5px 0";
             avatarName[1].style.fontSize = "17pt";
@@ -37,3 +37,26 @@ imageButton.addEventListener('click', function() {
     avatarImage[0].innerHTML = `<img src = "${userUrl}"></img>`
     avatarImage[1].innerHTML = `<img src = "${userUrl}"></img>`
 });
+
+const dupeAvatar = document.getElementById('duped');
+const downloadDupe = document.getElementById('dupe');
+const undupeAvatar = document.getElementById('unduped');
+const downloadUndupe = document.getElementById('undupe');
+
+
+downloadDupe.onclick = function() {
+  domtoimage.toBlob(dupeAvatar)
+    .then(function(blob) {
+      window.saveAs(blob, 'champion-dupes.png');
+    });
+}
+
+
+downloadUndupe.onclick = function() {
+    domtoimage.toBlob(undupeAvatar)
+      .then(function(blob) {
+        window.saveAs(blob, 'champion-unduped.png');
+      });
+  }
+  
+
