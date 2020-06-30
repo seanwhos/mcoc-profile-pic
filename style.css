@@ -75,7 +75,7 @@ html {
 
 h1 {
     color: rgb(230, 230, 230);
-    font-family: hanzelnormal;
+    font-family: hanzelnormal, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 21pt;
     margin: 0;
@@ -104,7 +104,7 @@ h2 {
 
 .skillicon {
     position: relative;
-    bottom: 3px;
+    bottom: 2px;
     width: 45px;
     height: 45px
 }
