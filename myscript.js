@@ -56,8 +56,6 @@ imageButton.addEventListener('click', function() {
     avatarImage[1].innerHTML = `<img src = "${userUrl}"></img>`
 });
 
-
-
 function previewFile() {
  let preview = document.getElementsByClassName('usrpic')
   var file    = document.querySelector('input[type=file]').files[0];
@@ -81,7 +79,6 @@ changeHue.addEventListener('click', function() {
     avatarImage[0].style.filter = `hue-rotate(${colorChoice}deg)`
     avatarImage[1].style.filter = `hue-rotate(${colorChoice}deg)`
 });
-
 
 const dupeAvatar = document.getElementById('duped');
 const downloadDupe = document.getElementById('dupe');
