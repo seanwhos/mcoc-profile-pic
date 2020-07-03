@@ -75,6 +75,13 @@ function previewFile() {
   }
 }
 
+const changeHue = document.getElementById('changehue');
+changeHue.addEventListener('click', function() {
+    let colorChoice = Math.floor(Math.random() * 360);
+    avatarImage[0].style.filter = `hue-rotate(${colorChoice}deg)`
+    avatarImage[1].style.filter = `hue-rotate(${colorChoice}deg)`
+});
+
 
 const dupeAvatar = document.getElementById('duped');
 const downloadDupe = document.getElementById('dupe');
