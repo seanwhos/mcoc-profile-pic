@@ -236,20 +236,24 @@ h2.champlist a:hover {
     }
 
     #controls button {
-        font-size: 30pt;
+        font-size: 42pt;
+        margin: 15px 0;
+        padding: 5px;
     }
     #controls p {
-        font-size: 40pt;
+        font-size: 32pt;
     }
 
     .champlist {
-        font-size: 18pt;
+        font-size: 28pt;
     }
 
     #classbuttons img {
         padding: 18px;
+        width: 75px;
+        height: 75px;
     }
 
     #championList {
-        font-size: 22pt;
+        font-size: 42pt;
 }
