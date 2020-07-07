@@ -106,17 +106,18 @@ const downloadUndupe = document.getElementById('undupe');
 downloadDupe.onclick = function() {
   domtoimage.toBlob(dupeAvatar)
     .then(function(blob) {
-      window.saveAs(blob, 'champion-dupes.png');
+      window.saveAs(blob, 'champion-duped.png');
     });
 }
-
 
 downloadUndupe.onclick = function() {
-  domtoimage.toBlob(undupeAvatar)
-    .then(function(blob) {
-      window.saveAs(blob, 'champion-unduped.png');
-    });
-}
+    domtoimage.toBlob(undupeAvatar)
+      .then(function(blob) {
+        window.saveAs(blob, 'champion-unduped.png');
+      });
+  }
+
+
 
 
 const skill = document.getElementById('skill');
