@@ -54,7 +54,9 @@ imageButton.addEventListener('click', function() {
 
     if ((userUrl === null) || (userUrl === "")){
         return;
-    }
+    }   
+        avatarImage[0].style.filter = `hue-rotate(0deg)`
+        avatarImage[1].style.filter = `hue-rotate(0deg)`
         avatarImage[0].innerHTML = `<img class="usrpic" src="${userUrl}"></img>`
         avatarImage[1].innerHTML = `<img class="usrpic" src="${userUrl}"></img>`
     
@@ -66,6 +68,8 @@ function previewFile() {
   var reader  = new FileReader();
 
   reader.onloadend = function () {
+    avatarImage[0].style.filter = `hue-rotate(0deg)`
+    avatarImage[1].style.filter = `hue-rotate(0deg)`
     preview[0].src = reader.result;
     preview[1].src = reader.result;
   }
@@ -79,6 +83,8 @@ function previewFile() {
 
 function championSelect(value)
 {
+    avatarImage[0].style.filter = `hue-rotate(0deg)`
+    avatarImage[1].style.filter = `hue-rotate(0deg)`
     avatarImage[0].innerHTML = `<img class="usrpic" src="${value}"></img>`
     avatarImage[1].innerHTML = `<img class="usrpic" src="${value}"></img>`
 }
