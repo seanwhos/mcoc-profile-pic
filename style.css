@@ -210,7 +210,7 @@ h2.champlist a:hover {
 }
 
 
-@media (max-device-width: 800px) {
+@media screen and (max-width: 500px) {
 
     body {
         padding: 0;
