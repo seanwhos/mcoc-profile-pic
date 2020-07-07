@@ -7,7 +7,7 @@ const avatarPower = document.getElementsByClassName('champpi');
 const avatarImage = document.getElementsByClassName('user-picture');
 
 nameButton.addEventListener('click', function() {
-    let userInput = prompt('Enter character name:', `Max length about 16 characters`);
+    let userInput = prompt('Enter character name (max 16 characters for best result)');
         
         if (userInput.length > 11) {
             avatarName[0].style.fontSize = "17pt";
@@ -26,7 +26,7 @@ nameButton.addEventListener('click', function() {
 });
 
 powerButton.addEventListener('click', function() {
-    let userInput = prompt('Enter power index:', `Include commas; 999,999,999 max`);
+    let userInput = prompt('Enter PI with commas e.g. 999,999,999');
 
     if ((userInput.length > 7) && (userInput.length < 10)) {
         avatarPower[0].style.fontSize = "28pt";
@@ -50,7 +50,7 @@ powerButton.addEventListener('click', function() {
 });
 
 imageButton.addEventListener('click', function() {
-     let userUrl = prompt('Enter valid image URL:', `Needs to be transparent background with similar headshot shape`); 
+     let userUrl = prompt('Enter image URL (similar shape headshot on transparent background'); 
 
     if ((userUrl === null) || (userUrl === "")){
         return;
