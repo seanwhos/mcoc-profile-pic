@@ -120,7 +120,7 @@ h2 {
     position: absolute;
     top: 80px;
     left: 425px;
-    width: 310px;
+    width: 250px;
     padding: 10px;
     text-align: center;
 }
@@ -128,10 +128,10 @@ h2 {
 #controls button {
     color: rgb(228, 220, 214);
     font-family: Handel Gothic;
-    font-size: 12pt;
+    font-size: 13pt;
     width: 100%;
-    margin: 5px 0;
-    padding: 10px;
+    margin: 6px 0;
+    padding: 5px;
     border-radius: 5px;
     outline: none;
     border: 1px solid rgb(0, 0, 0);
@@ -151,10 +151,25 @@ h2 {
     box-shadow: 0 0 4px rgb(0, 255, 255);
 }
 
+#championList {
+    text-transform: uppercase;
+    color: rgb(228, 220, 214);
+    font-family: Handel Gothic;
+    font-size: 12pt;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgb(26, 26, 26);
+    
+}
+
 #controls p {
     color: rgb(228, 220, 214);
     font-family: Handel Gothic;
-    font-size: 34pt;
+    font-size: 20pt;
     letter-spacing: 5px;
     padding: 0 10px;
     margin: 20px 0 5px 0;

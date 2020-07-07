@@ -73,6 +73,13 @@ function previewFile() {
   }
 }
 
+function championSelect(value)
+{
+    avatarImage[0].innerHTML = `<img src = "${value}"></img>`
+    avatarImage[1].innerHTML = `<img src = "${value}"></img>`
+}
+
+
 const changeHue = document.getElementById('changehue');
 changeHue.addEventListener('click', function() {
     let colorChoice = Math.floor(Math.random() * 360);
@@ -151,6 +158,4 @@ none.addEventListener('click', function(){
     powerClass[0].innerHTML = '';
     powerClass[1].innerHTML = '';
 });
-
-
 

@@ -45,11 +45,22 @@
             <button id="power">CHANGE PI</button><br>
             <button id="changehue">IMAGE COLOUR (RANDOM)</button><br>
             <button id="imageurl">CHANGE IMAGE (URL)</button><br>
-            <h2 class="champlist">List of champions for  image URLs <a href="https://marvel-contestofchampions.fandom.com/wiki/List_of_Champions" target="_blank">here</a> (Right click, copy image address) or select your own below:</h2>
+            <h2 class="champlist">List of champions for  image URLs <a href="https://marvel-contestofchampions.fandom.com/wiki/List_of_Champions" target="_blank">here</a> (Right click, copy image address)</h2>
 
 
             <input type="file" name="file" id="file" class="hidden" onchange="previewFile()"/>
             <button id="upload"><label for="file">UPLOAD IMAGE...</label></button>
+
+
+            <select name="championList" id="championList" onchange="championSelect(this.value)">
+                <option selected disabled>Choose a champion:</option>
+                <!--start of champion select list (A-Z)-->
+                <option value="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/c/cd/Abomination_portrait.png/revision/latest?cb=20150830054937">Abomination</option>
+            
+                <option value=" https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/6/68/Agent_Venom_portrait.png/revision/latest?cb=20160415213207">Agent Venom</option>
+
+
+            </select>
             
             <div id="classbuttons">
                 <img class="skillicon" id="skill" src = "assets/skills/skill.png">
