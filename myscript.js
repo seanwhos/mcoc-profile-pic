@@ -52,8 +52,12 @@ powerButton.addEventListener('click', function() {
 imageButton.addEventListener('click', function() {
      let userUrl = prompt('Enter valid image URL:', `Needs to be transparent background with similar headshot shape`); 
 
-    avatarImage[0].innerHTML = `<img src = "${userUrl}"></img>`
-    avatarImage[1].innerHTML = `<img src = "${userUrl}"></img>`
+    if ((userUrl === null) || (userUrl === "")){
+        return;
+    }
+        avatarImage[0].innerHTML = `<img class="usrpic" src="${userUrl}"></img>`
+        avatarImage[1].innerHTML = `<img class="usrpic" src="${userUrl}"></img>`
+    
 });
 
 function previewFile() {
@@ -75,8 +79,8 @@ function previewFile() {
 
 function championSelect(value)
 {
-    avatarImage[0].innerHTML = `<img src = "${value}"></img>`
-    avatarImage[1].innerHTML = `<img src = "${value}"></img>`
+    avatarImage[0].innerHTML = `<img class="usrpic" src="${value}"></img>`
+    avatarImage[1].innerHTML = `<img class="usrpic" src="${value}"></img>`
 }
 
 
