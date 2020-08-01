@@ -9,11 +9,11 @@ const avatarImage = document.getElementsByClassName('user-picture');
 nameButton.addEventListener('click', function() {
     let userInput = prompt('Enter character name (max 16 characters for best result)');
         
-        if (userInput.length > 11) {
+        if (userInput.length > 11) { 
             avatarName[0].style.fontSize = "17pt";
             avatarName[0].style.padding = "4px 0 4px 0";
             avatarName[1].style.fontSize = "17pt";
-            avatarName[1].style.padding = "4px 0 4px 0";
+            avatarName[1].style.padding = "4px 0 4px 0"; 
         } else {
             avatarName[0].style.fontSize = "";
             avatarName[0].style.padding = "";
